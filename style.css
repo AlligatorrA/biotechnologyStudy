@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,300&display=swap");
+
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(green 65%, rgb(92, 92, 221));
+  background: cover;
+  height: 45rem;
+}
+
+h1 {
+  color: rgb(81, 151, 10);
+  border-color: 1px solid black ;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+.navbar-Section {
+  background-color: rgb(81, 151, 10);
+  padding: 0.1px;
+}
+.nav-link-search {
+  float: right;
+  list-style: none;
+}
+.nav-link-icon {
+  list-style: none;
+  float: left;
+}
+.search,
+.cart {
+  margin: 0;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+.nav-link {
+  list-style: none;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.nav-link-a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+.nav-link-a:hover {
+  font-weight: 900;
+  background-color: green;
+  border-radius: 1rem;
+}
+.products {
+  float: left;
+  margin-top: 3rem;
+  width: 40rem;
+  color: rgb(0, 255, 255);
+  border-color: 2px solid black;
+  border-top-right-radius: 5em;
+  border-bottom-right-radius: 5em;
+  background-image: linear-gradient(white, green);
+}
+.emoji {
+  float: right;
+}
+.popUp {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: turquoise;
+  max-width: 15rem;
+  border-radius: 50%;
+}
+.subjects {
+  max-height: 15rem;
+  max-width: 20rem;
+}
+.subjects p {
+  font-size: 1rem;
+}
+.subjects a {
+  padding: 1rem;
+  color: rgb(30, 255, 0);
+  text-decoration: none;
+}
+.booksname {
+  border-radius: 1rem;
+}
+.books {
+  margin-top: 3rem;
+  
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.books1 {
+  margin-top: 10rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.cellBio a{
+    text-decoration: none;
+    color: rgb(30, 255, 0);
+
+}
