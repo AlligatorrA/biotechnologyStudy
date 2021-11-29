@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,300&display=swap"); */
 
 body {
   text-align: center;
@@ -38,10 +38,10 @@ h2 {
   list-style: none;
   float: left;
 }
-.cart {
+.menu {
   margin-right: 1rem;
   padding: 0.2rem;
-  border-radius: 0.2rem;
+  display: none;
 }
 .nav-link {
   list-style: none;
@@ -62,7 +62,8 @@ h2 {
 }
 .products{
   float: left;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -96,25 +97,6 @@ h2 {
     color: rgb(30, 255, 0);
 
  }
-/*nav .menu-btn{
-  color: white;
-}
-
-@media (max-width: 600px) {
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: 0;
-    background-color: rgb(81, 151, 10);
-    height: 100vh;
-    width: 100%;
-    display:block;
-    text-align: center;
-  }
-  nav ul li a {
-    display: block;
-  }
-} */
 
 .books{
   max-width: 90vw;
@@ -140,3 +122,23 @@ h2 {
   border-radius: 12px;
   text-decoration: none;
 }
+@media screen and (max-width: 700px) {
+ .link-responsive{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ ul{  
+  padding: 0px ;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  }
+ .menu {
+  margin-right: 1rem;
+  padding: 0.2rem;
+  display:inline-flex;
+  background-color:rgb(81, 151, 10); ;
+}
+} 
