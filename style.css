@@ -2,11 +2,11 @@
 
 body {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(green 65%, rgb(92, 92, 221));
   background: cover;
-  height: 45rem;
+  height: 98vh;
 }
 
 h1 {
@@ -15,6 +15,15 @@ h1 {
   font-style: italic;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
 }
 .navbar-Section {
   background-color: rgb(81, 151, 10);
@@ -25,18 +34,18 @@ h1 {
   list-style: none;
 }
 .nav-link-icon {
+  margin-left: 1rem;
   list-style: none;
   float: left;
 }
-.search,
 .cart {
-  margin: 0;
+  margin-right: 1rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
 }
 .nav-link {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
   margin: 0.2rem;
 }
 .nav-link-a {
@@ -44,16 +53,23 @@ h1 {
   color: white;
   padding: 0.5rem;
   font-size: 20px;
+  transition: all 0.5s ease;
 }
 .nav-link-a:hover {
   font-weight: 900;
   background-color: green;
   border-radius: 1rem;
 }
-.products {
+.products{
   float: left;
-  margin-top: 3rem;
-  width: 40rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-nav{
+  margin: 1.5rem 0rem 1.5rem 0;
+  width: 60vw;
   color: rgb(0, 255, 255);
   border-color: 2px solid black;
   border-top-right-radius: 5em;
@@ -70,39 +86,57 @@ h1 {
   max-width: 15rem;
   border-radius: 50%;
 }
-.subjects {
-  max-height: 15rem;
-  max-width: 20rem;
-}
-.subjects p {
-  font-size: 1rem;
-}
-.subjects a {
-  padding: 1rem;
-  color: rgb(30, 255, 0);
-  text-decoration: none;
-}
 .booksname {
   border-radius: 1rem;
 }
-.books {
-  margin-top: 3rem;
-  
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-}
 
-.books1 {
-  margin-top: 10rem;
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-}
+
 .cellBio a{
     text-decoration: none;
     color: rgb(30, 255, 0);
 
+ }
+/*nav .menu-btn{
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: rgb(81, 151, 10);
+    height: 100vh;
+    width: 100%;
+    display:block;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+  }
+} */
+
+.books{
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subjects{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px ;
+  background-color: rgb(81, 151, 10);
+  border-radius: 20px;
+}
+.subjects a{
+  padding: 0px;
+  margin: 4px ;
+  background-color: rgb(0, 255, 255);
+  border-radius: 12px;
+  text-decoration: none;
 }
