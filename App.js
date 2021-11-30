@@ -1,8 +1,10 @@
+const cart = document.querySelector(".cart")
 const menu = document.querySelector(".menu")
 const popUp = document.querySelector(".popUp")
 const linkResponsive = document.querySelector(".link-responsive")
 
 menu.addEventListener("click", menuFunction)
+// cart.addEventListener("click", cartFunction)
 
 // function cartFunction(e) {
 //     e.preventDefault()
@@ -13,11 +15,12 @@ menu.addEventListener("click", menuFunction)
 // }
 
 function menuFunction() {
-    console.log("hello");
+    // linkResponsive.style.display = "none";
     if (menu.checked == true) {
         linkResponsive.style.display = "block";
-    }else{
-        linkResponsive.style.display = "none";
+    }else if (menu.checked == false) {
+        linkResponsive.style.display = "block";
+        
     }
     
 }
